@@ -1,0 +1,61 @@
+body {
+    margin: 70px;
+    border: 10px solid pink;
+}
+
+h1 {
+    margin: 20px;
+    text-align: left;
+}
+
+
+/*Ids*/
+#navigation_bar {
+    background-color: pink;
+    text-align: center;
+}
+
+#main {
+    margin: 20px;
+}
+
+#footer {
+    background-color: pink;
+    text-align: center;
+}
+
+#sign_up_button {
+    margin: 10px;
+    background-color: pink;
+    color: white;
+    
+}
+
+/*classes*/
+.nav_link {
+    margin: 80px;
+    font-size: 30px;
+    color: white;
+}
+
+.footer_link {
+    margin: 150px;
+    font-size: 30px;
+    color: white;
+}
+
+
+/*a:links*/
+a:link { 
+    text-decoration: none; 
+  } 
+a:visited { 
+    text-decoration: none; 
+  } 
+a:hover { 
+    text-decoration: none; 
+    color:blue;
+  } 
+a:active { 
+    text-decoration: none; 
+  }
