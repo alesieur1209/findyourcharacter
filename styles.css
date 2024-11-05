@@ -1,17 +1,19 @@
 body {
     margin: 70px;
-    border: 10px solid pink;
+    border: 10px solid #F6B7D2;
 }
 
 h1 {
     margin: 20px;
     text-align: left;
+    font-size: 80px;
+    color: #F6B7D2;
 }
 
 
 /*Ids*/
 #navigation_bar {
-    background-color: pink;
+    background-color: #F6B7D2;
     text-align: center;
 }
 
@@ -20,20 +22,20 @@ h1 {
 }
 
 #footer {
-    background-color: pink;
+    background-color: #F6B7D2;
     text-align: center;
 }
 
 #sign_up_button {
     margin: 10px;
-    background-color: pink;
+    background-color: #F6B7D2;
     color: white;
     
 }
 
 /*classes*/
 .nav_link {
-    margin: 80px;
+    margin: 50px;
     font-size: 30px;
     color: white;
 }
@@ -42,6 +44,16 @@ h1 {
     margin: 150px;
     font-size: 30px;
     color: white;
+}
+
+.title_header{
+    display: flex;
+    align-items: center;
+}
+
+.logo_image{
+    height: 200px;
+    padding: 10px;
 }
 
 
@@ -54,7 +66,7 @@ a:visited {
   } 
 a:hover { 
     text-decoration: none; 
-    color:blue;
+    color:#C5FFFD;
   } 
 a:active { 
     text-decoration: none; 
