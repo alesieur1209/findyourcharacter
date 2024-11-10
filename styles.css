@@ -11,6 +11,21 @@ h1 {
 }
 
 
+fieldset {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 18px;
+}
+
 /*Ids*/
 #navigation_bar {
     background-color: #F6B7D2;
@@ -34,6 +49,29 @@ h1 {
 }
 
 /*classes*/
+
+.filter-submit-button{
+    background-color: #f6b7d2; 
+    color: white; 
+    border: none; 
+    padding: 15px 32px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+.checkboxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.legend-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
 .nav_link {
     margin: 50px;
     font-size: 30px;
@@ -54,6 +92,11 @@ h1 {
 .logo_image{
     height: 200px;
     padding: 10px;
+}
+
+.filter-explanation{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 

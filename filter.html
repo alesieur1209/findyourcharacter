@@ -27,23 +27,599 @@
 
         <div id="main">
             <h2>Welcome to the Filter!</h2>
-            <h3>Check the tags based on what you look like, or what type of characters you want to cosplay. </h3>
+            <p class="filter-explanation">Check the tags based on what you look like, or what type of characters you want to cosplay. <br> If you're unsure about a certain attribute, or if that attribute doesn't matter to you, click N/A. </p>
 
-            <p>Gender:</p>
-            <p>Hair Color:</p>
-            <p>Hair Texture:</p>
-            <p>Hair Length:</p>
-            <p>Facial Hair:</p>
-            <p>Eye Color:</p>
-            <p>Skin Tone:</p>
-            <p>Height:</p>
-            <p>Age Range:</p>
-            <p>Species:</p>
-            <p>Clothing Coverage:</p>
-            <p>Complexity:</p>
-            <p>Source Medium:</p>
+            <form>
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Gender:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="gender" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gender" value="female">
+                            Female
+                         </label>
+                         <label>
+                            <input type="checkbox" name="gender" value="male">
+                            Male
+                         </label>
+                         <label>
+                            <input type="checkbox" name="gender" value="androgynous">
+                            Androgynous
+                         </label>
+                         <label>
+                           <input type="checkbox" name="gender" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="gender" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Hair Color:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="hair color" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hair color" value="black">
+                            Black
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="brown">
+                            Brown
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="dirty blonde">
+                            Dirty Blonde
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="Blonde">
+                            Blonde
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="red">
+                            Red
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="orange">
+                            Orange
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="yellow">
+                            Yellow
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="green">
+                            Green
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="blue">
+                            Blue
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="purple">
+                            Purple
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair color" value="gray/white">
+                            Gray/White
+                         </label>
+                         <label>
+                           <input type="checkbox" name="hair color" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="hair color" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Hair Length:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="hair Length" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hair Length" value="bald">
+                            Bald
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair Length" value="above ears">
+                            Above Ears
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair Length" value="past ears">
+                            Past Ears
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair Length" value="shoulder">
+                            Shoulder
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair Length" value="past shoulder">
+                            Past Shoulder
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair Length" value="very long">
+                            Very Long
+                         </label>
+                         <label>
+                           <input type="checkbox" name="hair Length" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="hair Length" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Hair Texture:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="hair texture" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hair texture" value="straight">
+                            Straight
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair texture" value="wavy">
+                            Wavy
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair texture" value="curly">
+                            Curly
+                         </label>
+                         <label>
+                            <input type="checkbox" name="hair texture" value="coily">
+                            Coily
+                         </label>
+                         <label>
+                           <input type="checkbox" name="hair texture" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="hair texture" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Facial Hair:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="facial hair" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="facial hair" value="none">
+                            None
+                         </label>
+                         <label>
+                            <input type="checkbox" name="facial hair" value="some">
+                            Some
+                         </label>
+                         <label>
+                            <input type="checkbox" name="facial hair" value="much">
+                            Much
+                         </label>
+                         <label>
+                           <input type="checkbox" name="facial hair" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="facial hair" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Eye Color:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="eye color" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="eye color" value="heterochromic">
+                            Heterochromic
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="red">
+                            Red
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="orange">
+                            Orange
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="yellow">
+                            Yellow
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="green">
+                            Green
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="blue">
+                            Blue
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="purple">
+                            Purple
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="brown">
+                            Brown
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="black">
+                            Black
+                         </label>
+                         <label>
+                            <input type="checkbox" name="eye color" value="gray/white">
+                            Gray/White
+                         </label>
+                         <label>
+                           <input type="checkbox" name="eye color" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="eye color" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Skin Tone:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="skin tone" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="skin tone" value="light">
+                            Light
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="medium">
+                            Medium
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="dark">
+                            Dark
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="red">
+                            Red
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="orange">
+                            Orange
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="yellow">
+                            Yellow
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="green">
+                            Green
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="blue">
+                            Blue
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="purple">
+                            Purple
+                         </label>
+                         <label>
+                            <input type="checkbox" name="skin tone" value="gray/white">
+                            Gray/White
+                         </label>
+                         <label>
+                           <input type="checkbox" name="skin tone" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="skin tone" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Height:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="height" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="height" value="short">
+                            Short
+                         </label>
+                         <label>
+                            <input type="checkbox" name="height" value="medium">
+                            Medium
+                         </label>
+                         <label>
+                            <input type="checkbox" name="height" value="tall">
+                            Tall
+                         </label>
+                         <label>
+                           <input type="checkbox" name="height" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="height" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Age Range:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="age range" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="age range" value="child">
+                            Child
+                         </label>
+                         <label>
+                            <input type="checkbox" name="age range" value="teen">
+                            Teen
+                         </label>
+                         <label>
+                            <input type="checkbox" name="age range" value="young adult">
+                            Young Adult
+                         </label>
+                         <label>
+                            <input type="checkbox" name="age range" value="older adult">
+                            Older Adult
+                         </label>
+                         <label>
+                            <input type="checkbox" name="age range" value="elder">
+                            Elder
+                         </label>
+                         <label>
+                           <input type="checkbox" name="age range" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="age range" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Species:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="species" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="species" value="human">
+                            Human
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="semi-human">
+                            Semi-Human
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="alien">
+                            Alien
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="vampire">
+                            Vampire
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="zombie">
+                            Zombie
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="ghost">
+                            Ghost
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="monster">
+                            Monster
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="robot">
+                            Robot
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="anthro/animal">
+                            Anthro/Animal
+                         </label>
+                         <label>
+                            <input type="checkbox" name="species" value="semi-furry">
+                            Semi-Furry
+                         </label>
+                         <label>
+                           <input type="checkbox" name="species" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="species" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Clothing Coverage:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="clothing coverage" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="clothing coverage" value="very covered">
+                            Very Covered
+                         </label>
+                         <label>
+                            <input type="checkbox" name="clothing coverage" value="covered">
+                            Covered
+                         </label>
+                         <label>
+                            <input type="checkbox" name="clothing coverage" value="somewhat covered">
+                            Somewhat Covered
+                         </label>
+                         <label>
+                            <input type="checkbox" name="clothing coverage" value="somewhat uncovered">
+                            Somewhat Uncovered
+                         </label>
+                         <label>
+                            <input type="checkbox" name="clothing coverage" value="very uncovered">
+                            Very Uncovered
+                         </label>
+                         <label>
+                           <input type="checkbox" name="clothing coverage" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="clothing coverage" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Complexity:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="complexity" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="complexity" value="simple">
+                            Simple
+                         </label>
+                         <label>
+                            <input type="checkbox" name="complexity" value="detailed">
+                            Detailed
+                         </label>
+                         <label>
+                            <input type="checkbox" name="complexity" value="complex">
+                            Complex
+                         </label>
+                         <label>
+                            <input type="checkbox" name="complexity" value="very complex">
+                            Very Complex
+                         </label>
+                         <label>
+                           <input type="checkbox" name="complexity" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="complexity" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="legend-container">
+                    <legend>Source Medium:</legend>
+                    </div>
+                    <div class="checkboxes">
+                        <label>
+                           <input type="checkbox" name="source medium" value="all">
+                           All
+                        </label>
+                        <label>
+                            <input type="checkbox" name="source medium" value="anime">
+                            Anime
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="cartoon">
+                            Cartoon
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="video game">
+                            Video Game
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="book">
+                            Book
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="comic">
+                            Comic
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="live action">
+                            Live Action
+                         </label>
+                         <label>
+                            <input type="checkbox" name="source medium" value="play">
+                            Play
+                         </label>
+                         <label>
+                           <input type="checkbox" name="source medium" value="n/a">
+                           N/A
+                         </label>
+                        <label>
+                          <input type="checkbox" name="source medium" value="other">
+                           Other
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <br>
+                <button type="submit" class="filter-submit-button">Submit!</button>
+
+            </form>
+
          </div>
-
 
 
 
