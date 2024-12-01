@@ -4,6 +4,7 @@
         <title>Filter</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" href="/images/fyc_favicon_transparent.png">
+        <script src="javascript/main.js" defer></script>
     </head>
     <body>
 
@@ -30,7 +31,7 @@
             <p class="filter-explanation">Check the tags based on what you look like, or what type of characters you want to cosplay. <br> 
                You can select multiple tags for each category. If you're not sure about a certain attribute <br>or if that attribute doesn't apply, click N/A.</p>
 
-            <form>
+            <form id="filterForm">
                 <fieldset>
                     <div class="legend-container">
                     <legend>Gender:</legend>
@@ -57,7 +58,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="gender" value="other">
+                          <input type="checkbox" name="gender" value="other gender">
                            Other
                         </label>
                     </div>
@@ -73,47 +74,47 @@
                            All
                         </label>
                         <label>
-                            <input type="checkbox" name="hair color" value="black">
+                            <input type="checkbox" name="hair color" value="black hair">
                             Black
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="brown">
+                            <input type="checkbox" name="hair color" value="brown hair">
                             Brown
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="dirty blonde">
+                            <input type="checkbox" name="hair color" value="dirty blonde hair">
                             Dirty Blonde
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="Blonde">
+                            <input type="checkbox" name="hair color" value="blonde hair">
                             Blonde
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="red">
+                            <input type="checkbox" name="hair color" value="red hair">
                             Red
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="orange">
+                            <input type="checkbox" name="hair color" value="orange hair">
                             Orange
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="yellow">
+                            <input type="checkbox" name="hair color" value="yellow hair">
                             Yellow
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="green">
+                            <input type="checkbox" name="hair color" value="green hair">
                             Green
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="blue">
+                            <input type="checkbox" name="hair color" value="blue hair">
                             Blue
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="purple">
+                            <input type="checkbox" name="hair color" value="purple hair">
                             Purple
                          </label>
                          <label>
-                            <input type="checkbox" name="hair color" value="gray/white">
+                            <input type="checkbox" name="hair color" value="gray/white hair">
                             Gray/White
                          </label>
                          <label>
@@ -121,7 +122,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="hair color" value="other">
+                          <input type="checkbox" name="hair color" value="other hair color">
                            Other
                         </label>
                     </div>
@@ -141,23 +142,23 @@
                             Bald
                          </label>
                          <label>
-                            <input type="checkbox" name="hair Length" value="above ears">
+                            <input type="checkbox" name="hair Length" value="hair above ears">
                             Above Ears
                          </label>
                          <label>
-                            <input type="checkbox" name="hair Length" value="past ears">
+                            <input type="checkbox" name="hair Length" value="hair past ears">
                             Past Ears
                          </label>
                          <label>
-                            <input type="checkbox" name="hair Length" value="shoulder">
+                            <input type="checkbox" name="hair Length" value="hair to shoulder">
                             Shoulder
                          </label>
                          <label>
-                            <input type="checkbox" name="hair Length" value="past shoulder">
+                            <input type="checkbox" name="hair Length" value="hair past shoulder">
                             Past Shoulder
                          </label>
                          <label>
-                            <input type="checkbox" name="hair Length" value="very long">
+                            <input type="checkbox" name="hair Length" value="very long hair">
                             Very Long
                          </label>
                          <label>
@@ -165,7 +166,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="hair Length" value="other">
+                          <input type="checkbox" name="hair Length" value="other hair length">
                            Other
                         </label>
                     </div>
@@ -181,19 +182,19 @@
                            All
                         </label>
                         <label>
-                            <input type="checkbox" name="hair texture" value="straight">
+                            <input type="checkbox" name="hair texture" value="straight hair">
                             Straight
                          </label>
                          <label>
-                            <input type="checkbox" name="hair texture" value="wavy">
+                            <input type="checkbox" name="hair texture" value="wavy hair">
                             Wavy
                          </label>
                          <label>
-                            <input type="checkbox" name="hair texture" value="curly">
+                            <input type="checkbox" name="hair texture" value="curly hair">
                             Curly
                          </label>
                          <label>
-                            <input type="checkbox" name="hair texture" value="coily">
+                            <input type="checkbox" name="hair texture" value="coily hair">
                             Coily
                          </label>
                          <label>
@@ -201,7 +202,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="hair texture" value="other">
+                          <input type="checkbox" name="hair texture" value="other hair texture">
                            Other
                         </label>
                     </div>
@@ -217,15 +218,15 @@
                            All
                         </label>
                         <label>
-                            <input type="checkbox" name="facial hair" value="none">
+                            <input type="checkbox" name="facial hair" value="no facial hair">
                             None
                          </label>
                          <label>
-                            <input type="checkbox" name="facial hair" value="some">
+                            <input type="checkbox" name="facial hair" value="some facial hair">
                             Some
                          </label>
                          <label>
-                            <input type="checkbox" name="facial hair" value="much">
+                            <input type="checkbox" name="facial hair" value="much facial hair">
                             Much
                          </label>
                          <label>
@@ -233,7 +234,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="facial hair" value="other">
+                          <input type="checkbox" name="facial hair" value="other facial hair">
                            Other
                         </label>
                     </div>
@@ -249,47 +250,47 @@
                            All
                         </label>
                         <label>
-                            <input type="checkbox" name="eye color" value="heterochromic">
+                            <input type="checkbox" name="eye color" value="heterochromic eyes">
                             Heterochromic
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="red">
+                            <input type="checkbox" name="eye color" value="red eyes">
                             Red
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="orange">
+                            <input type="checkbox" name="eye color" value="orange eyes">
                             Orange
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="yellow">
+                            <input type="checkbox" name="eye color" value="yellow eyes">
                             Yellow
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="green">
+                            <input type="checkbox" name="eye color" value="green eyes">
                             Green
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="blue">
+                            <input type="checkbox" name="eye color" value="blue eyes">
                             Blue
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="purple">
+                            <input type="checkbox" name="eye color" value="purple eyes">
                             Purple
                          </label>
                          <label>
-                           <input type="checkbox" name="eye color" value="hazel">
+                           <input type="checkbox" name="eye color" value="hazel eyes">
                            Hazel
                         </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="brown">
+                            <input type="checkbox" name="eye color" value="brown eyes">
                             Brown
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="black">
+                            <input type="checkbox" name="eye color" value="black eyes">
                             Black
                          </label>
                          <label>
-                            <input type="checkbox" name="eye color" value="gray/white">
+                            <input type="checkbox" name="eye color" value="gray/white eyes">
                             Gray/White
                          </label>
                          <label>
@@ -297,7 +298,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="eye color" value="other">
+                          <input type="checkbox" name="eye color" value="other eye color">
                            Other
                         </label>
                     </div>
@@ -313,43 +314,43 @@
                            All
                         </label>
                         <label>
-                            <input type="checkbox" name="skin tone" value="light">
+                            <input type="checkbox" name="skin tone" value="light skin">
                             Light
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="medium">
+                            <input type="checkbox" name="skin tone" value="medium skin">
                             Medium
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="dark">
+                            <input type="checkbox" name="skin tone" value="dark skin">
                             Dark
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="red">
+                            <input type="checkbox" name="skin tone" value="red skin">
                             Red
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="orange">
+                            <input type="checkbox" name="skin tone" value="orange skin">
                             Orange
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="yellow">
+                            <input type="checkbox" name="skin tone" value="yellow skin">
                             Yellow
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="green">
+                            <input type="checkbox" name="skin tone" value="green skin">
                             Green
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="blue">
+                            <input type="checkbox" name="skin tone" value="blue skin">
                             Blue
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="purple">
+                            <input type="checkbox" name="skin tone" value="purple skin">
                             Purple
                          </label>
                          <label>
-                            <input type="checkbox" name="skin tone" value="gray/white">
+                            <input type="checkbox" name="skin tone" value="gray/white skin">
                             Gray/White
                          </label>
                          <label>
@@ -357,7 +358,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="skin tone" value="other">
+                          <input type="checkbox" name="skin tone" value="other skin color">
                            Other
                         </label>
                     </div>
@@ -377,7 +378,7 @@
                             Short
                          </label>
                          <label>
-                            <input type="checkbox" name="height" value="medium">
+                            <input type="checkbox" name="height" value="medium height">
                             Medium
                          </label>
                          <label>
@@ -389,7 +390,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="height" value="other">
+                          <input type="checkbox" name="height" value="other height">
                            Other
                         </label>
                     </div>
@@ -429,7 +430,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="age range" value="other">
+                          <input type="checkbox" name="age range" value="other age">
                            Other
                         </label>
                     </div>
@@ -469,6 +470,10 @@
                             Ghost
                          </label>
                          <label>
+                           <input type="checkbox" name="species" value="demon">
+                           Demon
+                        </label>
+                         <label>
                             <input type="checkbox" name="species" value="monster">
                             Monster
                          </label>
@@ -489,7 +494,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="species" value="other">
+                          <input type="checkbox" name="species" value="other species">
                            Other
                         </label>
                     </div>
@@ -529,7 +534,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="clothing coverage" value="other">
+                          <input type="checkbox" name="clothing coverage" value="other clothing coverage">
                            Other
                         </label>
                     </div>
@@ -565,7 +570,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="complexity" value="other">
+                          <input type="checkbox" name="complexity" value="other complexity">
                            Other
                         </label>
                     </div>
@@ -613,7 +618,7 @@
                            N/A
                          </label>
                         <label>
-                          <input type="checkbox" name="source medium" value="other">
+                          <input type="checkbox" name="source medium" value="other source medium">
                            Other
                         </label>
                     </div>
