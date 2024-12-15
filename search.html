@@ -4,7 +4,7 @@
         <title>Search</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" href="/images/fyc_favicon_transparent.png">
-        <script src="javascript/main.js" defer></script>
+        <script src="javascript/search.js" defer></script>
     </head>
     <body>
 
@@ -29,17 +29,12 @@
           <p class="search-bar-explanation">This is the search page. looking for a certain character or user specifically? Type in their name below! </p>
 
           <div class="search-bar-container">
-            <input type="text" id="searchInput" placeholder="Search..." />
-            <button onclick="performSearch()" class="search-button">Search</button>
-          </div>
-          
-
-
-    
-    
-         </div>
-
-
+            <form id="searchForm" action="results.html" method="GET">
+                <input type="text" id="searchInput" name="query" placeholder="Search..." />
+                <button onclick="performSearch()" class="search-button">Search</button>
+            </form>
+          </div>          
+        </div>
         
         <div id="footer">
             <a href="feedback.html" class="footer_link">Submit Feedback</a>

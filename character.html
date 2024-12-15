@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Character Details</title>
+        <title>Character</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" href="/images/fyc_favicon_transparent.png">
-        <script src="javascript/main.js" defer></script>
+        <script type="module" src="javascript/character.js" defer></script>
     </head>
     <body>
 
@@ -24,22 +24,21 @@
             <a href="login.html" class="nav_link">Login/Sign Up</a>
         </div>
 
-
         <div id="main">
-            <h2>This is the Character Details page</h2>
-
-            <div class="character_sheet">
-
-                <!--inject the detailed info for each character here-->>
-
-
+            
+            <div id="character-page">
+                <div id="image-gallery">
+                    <img id="current-image" src="" alt="Character">
+                    <div id="thumbnail-container"></div>
+                </div>
+                <div id="character-info">
+                    <h1 id="character-name"></h1>
+                    <ul id="character-details"></ul>
+                    <div id="character-tags"></div>
+                </div>
             </div>
-
-
-
-
+            
         </div>
-
 
         <div id="footer">
             <a href="feedback.html" class="footer_link">Submit Feedback</a>
